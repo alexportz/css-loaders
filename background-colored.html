@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>GAMER SKIN</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body {
+            background: linear-gradient( 45deg, #F3F, #F2C, #F22, #Ee3);
+            background-size:350% 350%;
+            animation: bgColors 20s ease infinite alternate;
+            display:grid;
+        }
+
+        #container {
+            background:rgba(33,33,33,.4);
+            width:80vw;
+            height:80vh; 
+            margin:0 auto;
+            transform: translateY(50px);
+            border-radius:20px;
+            position:relative;
+        }
+        #gridLeft {
+            position:absolute;
+            background: linear-gradient( 30deg, #F3F, #F2C, #F22, #Ee3 );
+            background-size:350% 350%;
+            animation: bgColors 20s ease infinite alternate;
+            border:solid 1px rgba(206, 204, 205, 0.2); 
+            top:50px;
+            left:40px;
+            width:100px;
+            height:80px;
+            border-radius:3px; 
+        }
+        .texto {
+            position: absolute;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:6rem;
+            color:#FFF;
+            top:30px;
+            left:180px;
+        }
+        .ne {
+            color:#FFF;
+            animation: txtBlink 1s ease infinite;
+        }
+
+        @keyframes txtBlink {
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+                text-shadow:none;
+            }
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,100% {
+                text-shadow:0 0 10px rgb(248, 192, 235),
+                0 0 20px #F2C,
+                0 0 30px #F2C,
+                0 0 40px rgb(211, 26, 168),
+                0 0 60px #F2C,
+                0 0 80px rgb(252, 116, 220);
+            }
+        }
+
+        @keyframes bgColors {
+            to {
+                background-position:0% 50%;
+            }
+            from {
+                background-position:100% 50%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   <div id="container">
+        <div id="gridLeft">
+
+        </div>
+        <div class="texto">
+            CSS <font class='ne'>TYPES</font>
+        </div>
+
+   </div>
+</body>
+</html>
